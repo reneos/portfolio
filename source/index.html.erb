@@ -1,37 +1,20 @@
-</div>
 
-<div class="jumbotron" id="top-header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-4 col-md-2">
-        <div class="rounded-circle"  id="photo-container">
-          <%= image_tag "photo.jpeg", alt: "Nicole Regina Wong", class: "rounded-circle w-100" %>
-        </div>
-      </div>
-      <div class="col-8 col-md-10">
-        <h1 class="display-4" id="header-name">Nicole Regina Wong</h1>
-        <p>I'm a <strong>fullstack developer</strong> who's been living in Tokyo since 2015.</p>
-        <p>Ruby || Rails || JavaScript || HTML || CSS/SCSS
-      </div>
-    </div>
-   </div>
-</div>
 
 <div class="container py-5">
 
   <div class="row">
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-7">
       <h2>👋 About</h2>
-      <p>I'm <strong>Nicole</strong> and I'm from <strong>Toronto, Canada.</strong>.
+      <p>I'm <strong>Nicole</strong> and I'm from <strong>🇨🇦Toronto, Canada.</strong>.
       I've been living in Tokyo since 2015 and I enjoy its fast-paced lifestyle.</p>
-      <p>In June 2020, I completed the <strong>LeWagon bootcamp</strong> (9-week intensive coding program).</p>
-      <p>When I'm not buying too many plants for my apartment, I enjoy photography and post-processing. You can check out some of my photos on my <%= link_to "instagram", "http://www.instagram.com/reneos" %></p>
+      <p>In June 2020, I completed the <%= link_to "🗼LeWagon Bootcamp", "https://www.lewagon.com/tokyo" %> (9-week intensive coding program).</p>
+      <p>When I'm not buying too many plants for my apartment, I enjoy photography and post-processing. You can check out some of my photos on my <%= link_to "📷Instagram", "http://www.instagram.com/reneos" %>.</p>
     </div>
-    <div class="col-12 col-md-4">
-
+    <div class="col-12 col-md-5">
+      <%= image_tag "photography.JPG", alt: "alttext", class: "w-100", id: "photo-example" %>
     </div>
   </div>
-
+  <span id="projects"></span>
 </div>
 
 <div class="bg-pink py-5">
@@ -40,7 +23,7 @@
     <div class="col-12">
       <h2>💻 Applications</h2>
       <p>Below are some of the projects I've worked on recently.</p>
-      <p>For more, feel free to check out my <%= link_to "github", "https://www.github.com/reneos" %>.</p>
+      <p>For more, feel free to check out my <%= link_to '<i class="fab fa-github-alt"></i> Github', "https://www.github.com/reneos" %>.</p>
     </div>
   </div>
 
@@ -78,7 +61,7 @@
         <h2>📦 Acornr</h2>
         <p><strong>Team Role:</strong> Lead developer</p>
         <p><strong>Used:</strong> Rails, AJAX, HTML, CSS, JavaScript
-        <p>An app for restaurants to quickly jumpstart their online takeout service presence. Allows you to upload a photo that will be automatically converted into a digital menu using Google Cloud Vision OCR. </p>
+        <p>A service that helps you find a place to temporarily store your belongings, like an AirBnB but for storage.</p>
       <div>
         <%= link_to "ℹ️ More Info", "/snapcarte.html", class: "btn btn-primary" %>
         <%= link_to '👀 Visit project', 'http://www.acornr.herokuapp.com', class: 'btn btn-primary' %>
@@ -90,14 +73,12 @@
 <div class="container py-5">
   <div class="row">
     <div class="col-12 col-md-6">
-      <div class="h-100">
         <%= image_tag "buzz_butler.png", class: "web_screenshot" %>
-      </div>
     </div>
       <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5">
         <h2>🍸 Buzz Butler</h2>
         <p><strong>Used:</strong> Rails, AJAX, HTML, CSS, JavaScript
-        <p>An app for restaurants to quickly jumpstart their online takeout service presence. Allows you to upload a photo that will be automatically converted into a digital menu using Google Cloud Vision OCR. </p>
+        <p>A web app for listing and creating cocktail recipes with photo upload.</p>
       <div>
         <%= link_to '👀 Visit project', 'http://www.buzzbutler.herokuapp.com', class: 'btn btn-primary' %>
       </div>

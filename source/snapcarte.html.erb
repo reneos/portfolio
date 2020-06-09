@@ -1,24 +1,61 @@
-</div>
+<div class="container py-5">
+  <div class="row mb-5">
 
-<div class="jumbotron" id="top-header">
-  <div class="container">
-    <h1 class="display-4" id="header-name">Nicole Regina Wong</h1>
-    <p>I'm a <strong>fullstack developer</strong> who's been living in Tokyo since 2015.</p>
-
-  </div>
-</div>
-
-<div class="py-5">
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h2>Snapcarte</h2>
+    <div class="col-12 my-3 text-center">
+      <h1>Snapcarte</h1>
     </div>
 
-    <div class="col-12">
-      <p>Below are some of the projects I've worked on recently.</p>
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>What is Snapcarte?</h2>
+      <p>Snapcarte is an app that lets restaurant owners quickly and easily start up their online takeout services. You can upload a photo of your menu and Snapcarte will read dish and price information using <strong>Google Vision OCR</strong>.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "snapcarte_home.png", class:"web_screenshot" %>
     </div>
   </div>
+  <div class="row mb-5 reverse">
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2>Team Role</h2>
+        <p>Snapcarte was built in a team of 3 over the period of <strong>10 days</strong> as a final product sprint for the LeWagon Bootcamp. I served as <strong>Lead Dev</strong> on the team. In addition to overseeing the overall structure of the app, I also focused my efforts on the OCR aspect.</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <%= image_tag "marvin-meyer-SYTO3xs06fU-unsplash.jpg", class:"web_screenshot" %>
+      </div>
+  </div>
 
-</div>
+  <div class="row mb-5">
+    <div class="col-12 my-3 text-center">
+      <h1>Features</h1>
+    </div>
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>Autofill</h2>
+      <p>We wanted to explore ways to make the restaurant sign-up process as <strong>quick and easy</strong> as possible, so we devised a way for owners to paste in their <strong>TripAdvisor</strong> links, which Snapcarte would use to autofill restaurant details.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "autofill.gif", class:"web_screenshot" %>
+    </div>
+
+  </div>
+
+  <div class="row mb-5 reverse">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>Menu OCR</h2>
+      <p>For the busy restaurant owner who isn't so tech-savvy, we decided on an OCR feature that would allow restaurant owners to <strong>upload a photo of their menu and have Snapcarte digitize it</strong>. Owners could also <strong>crop sections of their menu</strong>, improving menu organization and optimizing OCR.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "cropping.gif", class:"web_screenshot" %>
+    </div>
+
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>Editing the Menu</h2>
+      <p>After OCR is complete, the owner is taken to a menu overview page where they can <strong>name the different sections that were cropped</strong> as well as correct any OCR artifacts in dish names or prices.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "editing.gif", class:"web_screenshot" %>
+    </div>
+
+  </div>
 </div>
