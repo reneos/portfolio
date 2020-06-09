@@ -1,11 +1,71 @@
-// Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
-
 // External libraries
 // Using CDN for bootrap and font-awesome
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Colors
+$lilac-luster: #bbacc1;
+$platinum: #e5e5e5;
+$white: #ffffff;
+$charcoal: #373f51;
+$pastel-pink: #efdad6;
+$ivory: #f1f0ec;
+
+// Overall styling
+body {
+  background-color: $ivory;
+  min-height: 100vh;
+}
+
+// Text-styling
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Prata", "Georgia", "serif";
+}
+
+h2 {
+  padding-bottom: .5em;
+  font-size: 2em;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica", "sans-serif";
+  color: #373f51ff;
+}
+
+strong {
+  border-bottom: 2px solid #bbacc1ff;
+}
+
+// Card
+.web_screenshot {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  box-shadow: 10px 10px 0 lighten($pastel-pink, 4%);
+}
+
+
+// Header
+#top-header {
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  border-bottom: 1px dotted $charcoal;
+}
+
+#header-name {
+  text-shadow: -5px 0 #cacbce;
+}
+
+// Colours
+.bg-pink {
+  background-color: $pastel-pink;
+}
+
+.bg-lilac {
+  background-color: $lilac-luster;
+}
