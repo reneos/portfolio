@@ -5,14 +5,6 @@
 @import "components/index";
 @import "pages/index";
 
-// Colors
-$lilac-luster: #bbacc1;
-$platinum: #e5e5e5;
-$white: #ffffff;
-$charcoal: #373f51;
-$pastel-pink: #efdad6;
-$ivory: #f1f0ec;
-
 
 // Overall styling
 body {
@@ -32,111 +24,6 @@ a {
   border-bottom: 2px solid darken($pastel-pink, 15%);
 }
 
-// Text-styling
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Prata", "Georgia", "serif";
-}
-
-h2 {
-  padding-bottom: .5em;
-  font-size: 2em;
-}
-
-body {
-  font-family: "Montserrat", "Helvetica", "sans-serif";
-  color: #373f51ff;
-}
-
-strong {
-  border-bottom: 2px solid #bbacc1ff;
-}
-
-// Card
-.web_screenshot {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-  box-shadow: 10px 10px 0 lighten($pastel-pink, 4%);
-  border: 1px solid #e0ddd0;
-}
-
-
-// Header
-#top-header {
-  background-color: #DFDBE5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  border-bottom: 1px dotted $charcoal;
-}
-
-#header-name {
-  text-shadow: -5px 0 #cacbce;
-}
-
-#photo-container {
-  position: relative;
-  img {
-    z-index: 9000;
-    position: relative;
-  }
-
-  &:before {
-    border-radius: 50%;
-    content: "";
-    background-color: darken($lilac-luster, 5%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    z-index: 1;
-  }
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: $lilac-luster;
-  z-index: 9999;
-  transition: visibility 1s;
-  padding: 0 1em;
-  display: none;
-  .nav-item {
-    text-transform: uppercase;
-    font-size: .9em;
-  }
-}
-
-.navbar-toggler {
-  background-color: transparent;
-  border: 1px solid darken($lilac-luster, 10%);
-}
-
-.dropdown-menu {
-  left: auto;
-  right: 0;
-  background-color: $ivory;
-}
-
-.dropdown-item:active {
-  background-color: darken($ivory, 10%);
-}
-
-.logo {
-    border-radius: 50%;
-    background-color: #f1f0ec;
-    height: 2.5em;
-    width: 2.5em;
-    padding: .5em;
-    font-size: 1.1em;
-    line-height: 1.1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 // Colours
 .bg-pink {
   background-color: $pastel-pink;
@@ -146,15 +33,6 @@ strong {
   background-color: $lilac-luster;
 }
 
-// Buttons
-.btn-primary {
-  background-color: darken($lilac-luster, 5%);
-  border: none !important;
-  border-radius: 0;
-  &:hover, &:active, &:focus {
-    background-color: darken($lilac-luster, 15%) !important;
-  }
-}
 
 // Misc
 #photo-example {
@@ -168,7 +46,10 @@ strong {
   flex-direction: row-reverse;
 }
 
-// Mixins
-// @include media-breakpoint-down(sm) {
-
-// }
+// Media queries
+@media (max-width: 767.98px) {
+  .col-12.col-md-6.d-flex {
+    margin-top: 3em;
+    padding-bottom: 1em;
+  }
+}

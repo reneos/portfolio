@@ -1,0 +1,8 @@
+.web_screenshot {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  box-shadow: 10px 10px 0 lighten($pastel-pink, 4%);
+  border: 1px solid #e0ddd0;
+}
