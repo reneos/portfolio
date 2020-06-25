@@ -1,0 +1,53 @@
+<div class="container py-5">
+  <div class="row mb-5">
+
+    <div class="col-12 my-3 text-center">
+      <h1>Shuttermushi</h1>
+    </div>
+
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>What is Shuttermushi?</h2>
+      <p>I wanted to make a customized photo blog that would suit my needs as a hobbyist photographer.</p>
+      <p><strong>Built using</strong>: Rails, JavaScript, HTML/CSS, TinyMCE, Chartkick</p>
+      <div class="w-100 text-center"><%= link_to '👀 Visit project', 'https://www.shuttermushi.com', class: 'btn btn-primary' %></div>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "shuttermushi.png", class:"web_screenshot" %>
+    </div>
+  </div>
+
+  <div class="row mb-5 reverse">
+      <div class="col-12 my-3 text-center">
+        <h1>Features</h1>
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2>Rich text editing</h2>
+        <p>Since it's a blog, I wanted to be able to have rich text editing capabilities for posts. Rails 6 comes with ActionText that uses the Trix editor, but I wanted more features for inline image placement, etc., so I customized <strong>TinyMCE</strong> for my uses, which required some tweaking to get it to work with image upload with ActiveStorage/Cloudinary.</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <%= image_tag "shuttermushi_editor.png", class:"web_screenshot" %>
+      </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>EXIF extraction</h2>
+      <p>I wanted an automatic gallery view of any images uploaded alongside blog posts. These images also offer EXIF data upon hover using <strong>MiniMagick</strong> to extract the data. The biggest issue was getting it to work in production -- my heroku server had a very old version of the CLI tool that MiniMagick relies on (ImageMagick), so it required fiddling with buildpacks to upgrade the version on the server.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "shuttermushi_grid.png", class:"web_screenshot" %>
+    </div>
+
+  </div>
+
+  <div class="row mb-5 reverse">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <h2>Stats</h2>
+      <p>Since I had the EXIF data from images, I thought it might be interesting to have some simple statistics based on most used lenses, etc. I used <strong>Chartkick</strong> to render the graphs.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <%= image_tag "shuttermushi_graph.png", class:"web_screenshot" %>
+    </div>
+
+  </div>
+</div>
